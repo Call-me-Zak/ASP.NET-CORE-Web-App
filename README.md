@@ -80,8 +80,7 @@ It's also worth adding (no pun intended) that all the commands will install the 
 ```dotnet add package <project_name>.csproj Swashbuckle.AspNetCore -v -6.5.0```
 
 After installing the package you'd need to add and configure Swagger middleware:
-**22**
-
+```
 var builder = WebApplication.CreateBuilder(args);
 
 // Register services for the application
@@ -103,4 +102,4 @@ app.MapControllers();
 
 app.Run();
 
-
+```
