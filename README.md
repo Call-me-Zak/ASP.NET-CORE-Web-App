@@ -47,4 +47,16 @@ Most APIs accept parameters as part of the route.
 
 
 ### Unit 02 : Document an API by using Swashbuckle
+Swashbuckle helps automatically create comprehensive, interactive API documentation by using these 03 components to generate and present information about your API in a structured way.
 
+###### Swashbuckle.AspNetCore.Swagger
+Tool used for writing down API details in Swagger JSON format.
+
+Package installation : 
+```dotnet add package Swashbuckle.AspNetCore.SwaggerUI --version 6.7.0```
+
+##### Swashbuckle.AspNetCore.SwaggerGen
+Tool used for generating documentation for API code.
+
+##### Swashbuckle.AspNetCore.SwaggerUI
+UI for interacting with the API documentation.
