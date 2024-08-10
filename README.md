@@ -47,16 +47,34 @@ Most APIs accept parameters as part of the route.
 
 
 ### Unit 02 : Document an API by using Swashbuckle
-Swashbuckle helps automatically create comprehensive, interactive API documentation by using these 03 components to generate and present information about your API in a structured way.
+Swashbuckle helps automatically generate comprehensive, interactive RESTful API documentation.
 
+There're 03 main components to Swashbuckle :
 ###### Swashbuckle.AspNetCore.Swagger
 Tool used for writing down API details in Swagger JSON format.
 
-Package installation : 
-```dotnet add package Swashbuckle.AspNetCore.SwaggerUI --version 6.7.0```
+Package installation :
+```dotnet add package Swashbuckle.AspNetCore.Swagger --version 6.7.0```
+
 
 ##### Swashbuckle.AspNetCore.SwaggerGen
 Tool used for generating documentation for API code.
 
+Package installation :
+
+```dotnet add package Swashbuckle.AspNetCore.SwaggerGen --version 6.7.0```
+
 ##### Swashbuckle.AspNetCore.SwaggerUI
 UI for interacting with the API documentation.
+
+Package installation :
+
+```dotnet add package Swashbuckle.AspNetCore.SwaggerUI --version 6.7.0```
+
+Note that these 03 packages can all be installed using one command:
+
+```dot add package Swashbuckle.AspNetCore -v -6.5.0```
+
+It's also worth adding (no pun intended) that all the commands will install the package to the ```.csproj``` file in the current directory and does not install globally, so if you have multiple ```.csproj``` files in the same directory, you'll need to specify the name of your ```.csproj``` project by adding ```<name>.csproj``` so the command you'll be using in that case would be :
+
+```dotnet add package <project_name>.csproj Swashbuckle.AspNetCore -v -6.5.0```
