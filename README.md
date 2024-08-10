@@ -20,11 +20,13 @@ ASP.NET Core supports two approaches to creating APIs: a controller-based approa
 
 ##### Controller-based API
 They consist of one or more controller classes that derive from [ControllerBase].
+
 e.g.
 
 ![image](https://github.com/user-attachments/assets/93a09cf1-3a7d-4348-a9b4-9ff7b96142be)
 
 The [ControllerBase] class provides many properties and methods that are useful for handling HTTP requests. 
+
 e.g. 
 The following code sample [CreatedAtAction] returns a 201 status code:
 
@@ -33,6 +35,7 @@ The following code sample [CreatedAtAction] returns a 201 status code:
 ##### Minimal API
 Build fully functioning REST endpoints with minimal code and configuration. Skip traditional scaffolding by declaring API routes and actions.
 Minimal APIs support the configuration and customization needed to scale to multiple APIs, handle complex routes, apply authorization rules, and control the content of API responses.
+
 e.g.
 The following code creates an API at the root of the web app that returns the text, "Hello World!":
 
