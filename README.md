@@ -79,4 +79,28 @@ It's also worth adding (no pun intended) that all the commands will install the 
 
 ```dotnet add package <project_name>.csproj Swashbuckle.AspNetCore -v -6.5.0```
 
+After installing the package you'd need to add and configure Swagger middleware:
+**22**
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Register services for the application
+builder.Services.AddEndpointsApiExplorer();  // Enables endpoint discovery
+builder.Services.AddSwaggerGen();            // Adds Swagger generation services
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();            // Adds Swagger middleware to serve the Swagger UI and JSON endpoint
+    app.UseSwaggerUI();          // Configures Swagger UI to visualize and interact with the API
+}
+
+app.UseAuthorization();
+
+app.MapControllers();
+
+app.Run();
+
 
