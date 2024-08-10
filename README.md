@@ -19,16 +19,16 @@ To simplify the learning process, the work was segmented into digestable units.
 ASP.NET Core supports two approaches to creating APIs: a controller-based approach and minimal APIs. A controller-based API is a traditional approach to building APIs in which each endpoint is mapped to a specific controller class. The controller handles the request, performs any necessary business logic, and returns a response.
 
 ##### Controller-based API
-They consist of one or more controller classes that derive from [ControllerBase].
+They consist of one or more controller classes that derive from `ControllerBase`.
 
 e.g.
 
 ![image](https://github.com/user-attachments/assets/93a09cf1-3a7d-4348-a9b4-9ff7b96142be)
 
-The [ControllerBase] class provides many properties and methods that are useful for handling HTTP requests. 
+The `ControllerBase` class provides many properties and methods that are useful for handling HTTP requests. 
 
 e.g. 
-The following code sample [CreatedAtAction] returns a 201 status code:
+The following code sample `CreatedAtAction` returns a 201 status code:
 
 ![image](https://github.com/user-attachments/assets/c822a1ce-2f5a-42d6-b184-5b38b90afd6d)
 
