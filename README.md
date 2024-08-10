@@ -1,6 +1,7 @@
 # ASP.NET-CORE-Web-App
 #### Learning Path
 In this learning journey I tackled the benefits of using APIs (a set of rules and protocols allowing apps to communicate with each other).
+
 APIs not only provide a way for developers to access the functionality of another piece of software, such as a web service, and use that functionality in their own applications.
 They also : 
 - Simplify development ==> functionality of other software is accessible without having to understand the details of how that software works, saving time and effort when building new applications.
