@@ -269,7 +269,32 @@ And the JSON element with ```id: 4``` has been removed.
 
 ![image](https://github.com/user-attachments/assets/add8fa94-9b16-4724-a0df-a143f02fb052)
 
+And if I were to try and delete it again, we get the infamous error 404 not found:
 
+![image](https://github.com/user-attachments/assets/cdaa425f-8e08-4a16-a42f-ba6a3f5d190b)
+
+And after deleting ids from 4 to 13, we can check with ```GET``` to see the remaining elements.
+
+![image](https://github.com/user-attachments/assets/84874907-083b-43ff-87c6-9bc3170ff2c5)
+
+I also took the liberty of deleting the 2 Pears, leaving only one.
+
+![image](https://github.com/user-attachments/assets/7f480ef7-2208-456b-b7c7-f08b6cdc98c7)
+
+Final result :
+
+![image](https://github.com/user-attachments/assets/07590f9f-c464-431d-816d-40179a42047c)
+
+![image](https://github.com/user-attachments/assets/62762c49-c449-478e-b6a1-c701c2c927de)
+
+And here we can see the instance where I tried to add the same id again vs when a new element has been added
+
+![image](https://github.com/user-attachments/assets/db88e80c-3f72-4c46-a821-6ccfaef21694)
+
+#### Step 04 : Publishing the API to Azure App Service using VSCode Azure extensions
+<a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups">Azure Resources extension</a>
+
+<a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice">Azure App Service extension</a>
 
 
 
