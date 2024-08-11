@@ -122,3 +122,8 @@ In the ```launchSettings.json``` file, change the ```applicationUrl``` port numb
 In our case ```https://localhost:6000```
 
 ![image](https://github.com/user-attachments/assets/bbab0bfa-1289-406e-ac71-9934a7135c75)
+
+Next, we proceed to add descriptive headings to the different functions in our API by using the ```.WithTags``` option. The following sample code shows adding "Add fruit to list" as a heading to a POST mapping:
+
+![image](https://github.com/user-attachments/assets/84a1e312-f500-4c41-a30c-d5233cc2444b)
+
