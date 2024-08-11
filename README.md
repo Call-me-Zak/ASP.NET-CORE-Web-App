@@ -117,12 +117,16 @@ Result we get from SwaggerUI :
 
 ##### Note : 
 The default endpoint for the Swagger UI is ```https:localhost:port/swagger```, in our case we used ```port 5001``` for ```HTTPS``` (use ```port 5000``` for ```HTTP``` when running locally.)
-But this isn't a rule of thumb, as we can also change to any port we want by modifying the ```launchSettings.json``` file or by setting the ```ASPNETCORE_URLS``` environment variable, as these are merely default setting and we can configure the app to run on a different port if needed. Here's how :
+
+But this isn't a rule of thumb, as we can also change to any port we want by modifying the ```launchSettings.json``` file or by setting the ```ASPNETCORE_URLS``` environment variable (check the ````launch.json``` file under ```env```).
+
+![image](https://github.com/user-attachments/assets/d06c0294-47a3-4fa1-a74d-e1236341769e)
+
+
+These are merely default setting and we can configure the app to run on a different port if needed.
 In the ```launchSettings.json``` file, change the ```applicationUrl``` port number to the one we want and then SwaggerUI will be accessible on that port instead.
-In our case, we can pick ```port 5050``` so the settings would change to ```https://localhost:5050```
 
-![image](https://github.com/user-attachments/assets/f5397777-c129-42c0-aef2-298159d8492e)
-
+![image](https://github.com/user-attachments/assets/45013dec-f86c-4e45-966f-ccddf6b6702b)
 
 Next, we proceed to add descriptive headings to the different functions in our API by using the ```.WithTags``` option. The following sample code shows adding "Add fruit to list" as a heading to a POST mapping:
 
@@ -172,5 +176,27 @@ The Swagger documentaiton was created by using the Swashbuckle package.
    Note that we need to navigate to the directory where the project is located for the command to work, and for this particular project we'll need .NET 7.0.20, as I had .NET 8.0.7, I needed to download the proper version as indicated in the picture below.
 
 ![image](https://github.com/user-attachments/assets/7d245c0e-c497-4ad2-bc47-0f736285c74f)
+
+![image](https://github.com/user-attachments/assets/aa0155b7-e76b-47d9-8e92-c6e940e75080)
+![image](https://github.com/user-attachments/assets/09208fb6-e033-464e-9548-cd5f6377db40)
+
+Our project is now using .NET 7.0. as can be seen our dependencies file :
+
+![image](https://github.com/user-attachments/assets/843a59ce-37ed-42db-8337-4db7ffdcb25b)
+
+And TADA ! Works like a charm
+###### Note :
+```http://localhost/5050``` will display this page cannot be found message, unless we append ```/swagger``` as that is the endpoint for Swagger API documentation.
+
+ Full URL : ```http://localhost/5050/swagger```
+
+![image](https://github.com/user-attachments/assets/a404edda-127f-41c1-9c00-5ddf47168077)
+
+![image](https://github.com/user-attachments/assets/83d88af2-a7f2-4703-9b2b-bf3127743f88)
+
+
+#### Step 03 : Performing different operations on the data :
+
+1) Performing a ````GET``` operation :
 
 
