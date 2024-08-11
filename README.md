@@ -1,4 +1,4 @@
-# ASP.NET-CORE-Web-App
+![image](https://github.com/user-attachments/assets/5efe11f0-a52e-47e4-8d86-fe052006e770)# ASP.NET-CORE-Web-App
 #### Learning Path
 In this learning journey I tackled the benefits of using APIs (a set of rules and protocols allowing apps to communicate with each other).
 
@@ -291,10 +291,86 @@ And here we can see the instance where I tried to add the same id again vs when 
 
 ![image](https://github.com/user-attachments/assets/db88e80c-3f72-4c46-a821-6ccfaef21694)
 
-#### Step 04 : Publishing the API to Azure App Service using VSCode Azure extensions
+#### Step 04 : Publishing the API to Azure App Service using Azure extensions on VSCode
 <a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups">Azure Resources extension</a>
 
 <a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice">Azure App Service extension</a>
 
+##### 1) Sign-in to Azure
+
+Error
+
+![image](https://github.com/user-attachments/assets/680a46af-d40a-4c34-bcde-ac003cfaf627)
+
+wE GOT OUR BOY AZURE IN THE HOUSE
+
+![image](https://github.com/user-attachments/assets/ffcd2463-e2aa-43c6-8f5c-75294ac14ed9)
+
+
+
+1
+![image](https://github.com/user-attachments/assets/b2e69b66-e7fe-496d-86f2-46738e8fe792)
+
+2
+![image](https://github.com/user-attachments/assets/af3c543a-4b2f-4e9e-b45f-da9ea76b2674)
+
+3
+![image](https://github.com/user-attachments/assets/75ad642d-ad59-4ba2-94d4-015b925d5d3d)
+
+4
+![image](https://github.com/user-attachments/assets/42e2cf17-38f6-4757-b76a-b568364cb4c7)
+
+5
+![image](https://github.com/user-attachments/assets/13638499-9a3d-475f-8f18-a445c44fea04)
+
+6
+![image](https://github.com/user-attachments/assets/47347aab-0724-4b57-9e9b-137369f80bf0)
+
+7
+![image](https://github.com/user-attachments/assets/4463faa5-11b5-448d-96b5-5fbaf6a0a137)
+
+8
+![image](https://github.com/user-attachments/assets/97a281ae-414c-497e-ae82-6066a1bb0628)
+
+9 Skip For now
+![image](https://github.com/user-attachments/assets/5867b6f9-e57f-445a-b784-f358276fd7f8)
+
+This time our web app is being deployed correctly 
+![image](https://github.com/user-attachments/assets/7974fc03-4795-4a74-b64c-783333dfb0b6)
+
+And we get the deploy at the bottom right
+![image](https://github.com/user-attachments/assets/ddb08058-2264-43a2-9948-61f8b332ca71)
+![image](https://github.com/user-attachments/assets/9b1292c1-4e10-4212-a126-62f2a57576e1)
+
+We can see our app in the resources tab
+![image](https://github.com/user-attachments/assets/60073231-e6b8-41c6-b3e5-8c11fcc306f4)
+
+Takes some time for the code to appear
+![image](https://github.com/user-attachments/assets/85af587a-84f3-4980-964f-2acd2d7f24c0)
+
+We can see here adding ```/swagger``` gives us 404 not found
+![image](https://github.com/user-attachments/assets/d1bca039-0a72-4d84-9ff9-af3a6908ac31)
+
+After a redeploying
+
+![image](https://github.com/user-attachments/assets/9523bc52-09c8-44fe-8db1-d231d5a0b390)
+
+![image](https://github.com/user-attachments/assets/0ca4d0c7-14a6-4d4c-90d2-19c547675bc4)
+
+![image](https://github.com/user-attachments/assets/ceee0a24-6c6f-48b5-90dd-4ac7e105d1c5)
+
+![image](https://github.com/user-attachments/assets/0980ca91-936e-4fe8-9157-3ce77922f8bf)
+
+And the API has been succesfully deployed to Azure !
+![image](https://github.com/user-attachments/assets/fddae279-1ebe-4a0b-b2ab-087b23a20e44)
+
+If you stuck around this long, it also adapts to mobile
+![image](https://github.com/user-attachments/assets/1c9c0f3a-d747-4022-bd83-97c7616985cd)
+
+Fun fact: 
+By the time you're reading this the API is most likely down, cause Azure requires a subscription fee to keep it up, and you know the limitation that comes with free subscriptions.
+
+A memorial to my lovely API
+```https://fruitapi-zak.azurewebsites.net/swagger/index.html```
 
 
