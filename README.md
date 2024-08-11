@@ -328,8 +328,7 @@ Alternatively right clicking on ```App Services``` then selecting ```Create New 
 3 : Select ```+Create new resource group``` or pick one if you already have.
 ![image](https://github.com/user-attachments/assets/a5e903f9-4cb7-4b0f-a11d-2ff234dc6e8f)
 
-4 Select the runtime stack
-![image](https://github.com/user-attachments/assets/f16aa252-2f68-4ed2-b765-c28ff0660ad3)
+4 Select the runtime stack .NET 7 (STS)
 
 ![image](https://github.com/user-attachments/assets/42e2cf17-38f6-4757-b76a-b568364cb4c7)
 
@@ -346,25 +345,25 @@ Alternatively right clicking on ```App Services``` then selecting ```Create New 
 ![image](https://github.com/user-attachments/assets/97a281ae-414c-497e-ae82-6066a1bb0628)
 
 9 Skip For now
+
 ![image](https://github.com/user-attachments/assets/5867b6f9-e57f-445a-b784-f358276fd7f8)
 
-This time our web app is being deployed correctly 
-![image](https://github.com/user-attachments/assets/7974fc03-4795-4a74-b64c-783333dfb0b6)
-
-And we get the deploy at the bottom right
-![image](https://github.com/user-attachments/assets/ddb08058-2264-43a2-9948-61f8b332ca71)
-![image](https://github.com/user-attachments/assets/9b1292c1-4e10-4212-a126-62f2a57576e1)
+This time our web app has been succsefully created, and we get the ```deploy``` button at the bottom right corner
+![image](https://github.com/user-attachments/assets/54e32367-8c42-464b-b22a-32c3b37137d3)
 
 We can see our app in the resources tab
+
 ![image](https://github.com/user-attachments/assets/60073231-e6b8-41c6-b3e5-8c11fcc306f4)
 
-Takes some time for the code to appear
+Since I've yet to deploy it, our lovely API is yet to appear !
+
 ![image](https://github.com/user-attachments/assets/85af587a-84f3-4980-964f-2acd2d7f24c0)
 
-We can see here adding ```/swagger``` gives us 404 not found
+We can see here adding ```/swagger``` gives us the error code 404 not found.
+
 ![image](https://github.com/user-attachments/assets/d1bca039-0a72-4d84-9ff9-af3a6908ac31)
 
-After a redeploying
+After deploying
 
 ![image](https://github.com/user-attachments/assets/9523bc52-09c8-44fe-8db1-d231d5a0b390)
 
@@ -374,16 +373,18 @@ After a redeploying
 
 ![image](https://github.com/user-attachments/assets/0980ca91-936e-4fe8-9157-3ce77922f8bf)
 
-And the API has been succesfully deployed to Azure !
+Our magnificent API has been succesfully deployed to Azure ! 🥳
+
 ![image](https://github.com/user-attachments/assets/fddae279-1ebe-4a0b-b2ab-087b23a20e44)
 
 If you stuck around this long, it also adapts to mobile
+
 ![image](https://github.com/user-attachments/assets/1c9c0f3a-d747-4022-bd83-97c7616985cd)
 
-Fun fact: 
-By the time you're reading this the API is most likely down, cause Azure requires a subscription fee to keep it up, and you know the limitation that comes with free subscriptions.
+##### Fun fact: 
+By the time you're reading this our hardworking API is most likely down, cause Azure requires a subscription fee to keep it up, and you know the limitation that comes with free subscriptions.
 
-A memorial to my lovely API
+A memorial to my lovely API project.
 ```https://fruitapi-zak.azurewebsites.net/swagger/index.html```
 
 
