@@ -79,7 +79,7 @@ It's also worth adding (no pun intended) that all the commands will install the 
 
 ```dotnet add package <project_name>.csproj Swashbuckle.AspNetCore -v -6.5.0```
 
-After installing the package you'd need to add and configure Swagger middleware:
+After installing the package, we need to add and configure Swagger middleware:
 ```
 var builder = WebApplication.CreateBuilder(args);
 
@@ -92,7 +92,7 @@ var app = builder.Build();
 // Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();            // Adds Swagger middleware to serve the Swagger UI and JSON endpoint
+    app.UseSwagger();            // Adds Swagger middleware to serve the Swagger UI and JSON endpoint (The default endpoint for the Swagger UI is http:<hostname>:<port>/swagger)
     app.UseSwaggerUI();          // Configures Swagger UI to visualize and interact with the API
 }
 
@@ -103,3 +103,14 @@ app.MapControllers();
 app.Run();
 
 ```
+
+We can also customize and extend the Swagger documentation :
+The configuration action passed to the ```AddSwaggerGen``` method can include additional information through the ```OpenApiInfo``` class.
+
+We can add information to display in the API documentation :
+
+![image](https://github.com/user-attachments/assets/80dd7b32-b85a-44a2-9a8f-bc7a0b705430)
+
+Result we get from SwaggerUI :
+
+![image](https://github.com/user-attachments/assets/b2391bbe-e211-4749-a295-acf770a05ac1)
