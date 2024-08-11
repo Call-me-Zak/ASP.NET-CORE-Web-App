@@ -134,6 +134,7 @@ The Swagger UI displays the "Add fruit to list" tag as a heading above the POST 
 ![image](https://github.com/user-attachments/assets/778e77ec-221a-41b6-acc6-35bd4cfbe4fe)
 
 
-Ref : Bigger image
+Ref : SwaggerUI accessed locally via ```https://localhost:5050/swagger/v1/swagger.json```
+I will now walk you through the code used to get to that result.
 
 ![image](https://github.com/user-attachments/assets/95026cc3-c2f4-46dd-8870-bb7bca535269)
