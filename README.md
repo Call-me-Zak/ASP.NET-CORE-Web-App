@@ -127,3 +127,8 @@ Next, we proceed to add descriptive headings to the different functions in our A
 
 ![image](https://github.com/user-attachments/assets/84a1e312-f500-4c41-a30c-d5233cc2444b)
 
+
+The Swagger UI displays the "Add fruit to list" tag as a heading above the POST action.
+
+![image](https://github.com/user-attachments/assets/778e77ec-221a-41b6-acc6-35bd4cfbe4fe)
+
