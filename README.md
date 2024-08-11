@@ -139,5 +139,38 @@ I will now walk you through the code used to get to that result.
 
 ![image](https://github.com/user-attachments/assets/95026cc3-c2f4-46dd-8870-bb7bca535269)
 
+### Skills Learned :
+
+Navigate a documented API
+Determine endpoints for HTTP operations
+Identify API requierments for HTTP operations
+Publish an app to Azure App Service
 
 #### Step 01 :
+###### API information
+The API interacts with an in-memory database that contains the following fields:
+![image](https://github.com/user-attachments/assets/9282ffea-e769-441a-ac28-9b6eebe723fc)
+
+The Swagger documentaiton was created by using the Swashbuckle package.
+
+#### Step 02 :
+##### Running the Fruit API locally (Fruit API download link: https://raw.githubusercontent.com/MicrosoftLearning/APL-2002-develop-aspnet-core-consumes-api/master/Allfiles/Downloads/FruitAPI.zip)
+
+1) Launch VSCode > File > Open Folder
+
+![image](https://github.com/user-attachments/assets/086bc8e2-8773-4fbf-a86e-56763a92e889)
+
+2) Select the ````FruitAPI``` folder
+
+![image](https://github.com/user-attachments/assets/24dc8bf3-d43d-4376-8d7f-fbe0fa75bcee)
+
+3) The files should appear in the Explorer pane
+
+![image](https://github.com/user-attachments/assets/d96f86e5-71ef-4491-af1d-f53df2a0287e)
+
+4) From the cmd prompt, execute the ```dotnet run``` command to start our work.
+   Note that we need to navigate to the directory where the project is located for the command to work, and for this particular project we'll need .NET 7.0.20, as I had .NET 8.0.7, I needed to download the proper version as indicated in the picture below.
+
+![image](https://github.com/user-attachments/assets/7d245c0e-c497-4ad2-bc47-0f736285c74f)
+
+
