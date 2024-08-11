@@ -197,6 +197,79 @@ And TADA ! Works like a charm
 
 #### Step 03 : Performing different operations on the data :
 
-1) Performing a ````GET``` operation :
+##### 1) ````GET``` operation :
+By clicking ```GET``` we get the following menu :
+
+![image](https://github.com/user-attachments/assets/e30e1fdd-30b7-4070-b1db-d3eef0b93fa6)
+
+After clicking on ````Try it out``` then ```Execute``` we're then presented with a list of fruits and their availability in a .json format
+
+![image](https://github.com/user-attachments/assets/e62b8af0-31df-4eb8-8863-243e0ec4f69e)
+
+![image](https://github.com/user-attachments/assets/33066749-7053-4e0d-9fda-d3219e677fa8)
+
+And if we append ```/fruitlist``` to our url instead of ```/swagger```we can directly access the page containing the JSON package :
+
+![image](https://github.com/user-attachments/assets/10871675-7a96-4cb0-b6fc-70f07c8e35ba)
+
+##### 2) ```POST``` operation :
+We can see here that a request body is required, which makes sense as this is a POST request.
+
+![image](https://github.com/user-attachments/assets/eca59fb0-27d1-41cf-b696-bdabb8b0ba22)
+
+Response :
+
+![image](https://github.com/user-attachments/assets/1a22fd13-32aa-4495-94e8-f0d95bd77c64)
+
+This time, to directly access the page, we append ```/5``` to the URL.
+
+![image](https://github.com/user-attachments/assets/8692cdb3-ce7f-46d3-8232-54b4d149ccbc)
+
+Now, if we try and append a different number before using the post request we'll get the following error :
+
+![image](https://github.com/user-attachments/assets/15ced153-b36e-4c7c-8717-05f88e84dfb2)
+
+But after the ```POST``` request we can see that we get a succesful response.
+
+![image](https://github.com/user-attachments/assets/b25fbe82-04f8-4b98-abed-a90979c865f0)
+
+![image](https://github.com/user-attachments/assets/12bd6eaa-4522-44ac-b337-c19dae5caaf9)
+
+So, I went ahead and added a "Pear" to our fruit basket.
+I left the id 0 so an index will be automatically assigned (because ```id : 0``` was taken) , as we can see in the 2nd picture, it's 15.
+
+![image](https://github.com/user-attachments/assets/691aa1b8-1cbb-4e77-ae71-5491a1097579)
+
+![image](https://github.com/user-attachments/assets/9e390d8b-b0b2-4962-8d91-62bf5ccc8b2f)
+
+So, if I were to go back and use ```GET``` request, we'll see new elements have now been added.
+
+![image](https://github.com/user-attachments/assets/043dac6a-d80e-45f8-affa-690fc86a81ac)
+
+We can find the Pears that I added with the ```POST``` request in there as well.
+
+![image](https://github.com/user-attachments/assets/7066ec00-b789-4ae7-bada-cbf2cb316c64)
+
+
+##### 3) ```DELETE``` operation :
+We can delete by id, so I'm gonna go ahead and delete ids 4 to 13, as they all contain the same element.
+
+![image](https://github.com/user-attachments/assets/a085263b-cb5a-4bd9-a76e-c1357ab6c096)
+
+![image](https://github.com/user-attachments/assets/a1c13d46-30c8-4e35-ae5b-1677373bc905)
+
+Under ```Responses``` we can see that the operation was a success.
+
+![image](https://github.com/user-attachments/assets/beae4835-69e2-4ba4-9dbd-0aac84589a5d)
+
+To verify, we simply use ```GET``` request to check.
+And the JSON element with ```id: 4``` has been removed.
+
+![image](https://github.com/user-attachments/assets/baee64d1-7cf5-4520-bbf8-d55036aa00f5)
+
+![image](https://github.com/user-attachments/assets/add8fa94-9b16-4724-a0df-a143f02fb052)
+
+
+
 
 
