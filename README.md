@@ -119,9 +119,10 @@ Result we get from SwaggerUI :
 The default endpoint for the Swagger UI is ```https:localhost:port/swagger```, in our case we used ```port 5001``` for ```HTTPS``` (use ```port 5000``` for ```HTTP``` when running locally.)
 we can also change to any port we want by modifying the ```launchSettings.json``` file or by setting the ```ASPNETCORE_URLS``` environment variable, as these are merely default setting and we can configure the app to run on a different port if needed. Here's how :
 In the ```launchSettings.json``` file, change the ```applicationUrl``` port number to the one we want and then SwaggerUI will be accessible on that port instead.
-In our case ```https://localhost:6000```
+In our case, we can pick ```port 5050``` so the settings would change to ```https://localhost:5050```
 
-![image](https://github.com/user-attachments/assets/bbab0bfa-1289-406e-ac71-9934a7135c75)
+![image](https://github.com/user-attachments/assets/f5397777-c129-42c0-aef2-298159d8492e)
+
 
 Next, we proceed to add descriptive headings to the different functions in our API by using the ```.WithTags``` option. The following sample code shows adding "Add fruit to list" as a heading to a POST mapping:
 
