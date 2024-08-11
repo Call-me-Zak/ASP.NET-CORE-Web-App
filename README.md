@@ -2,18 +2,25 @@
 
 ![image](https://github.com/user-attachments/assets/5efe11f0-a52e-47e4-8d86-fe052006e770)
 
-#### Learning Path
+### Learning Path
 In this learning journey I tackled the benefits of using APIs (a set of rules and protocols allowing apps to communicate with each other).
 
-APIs not only provide a way for developers to access the functionality of another piece of software, such as a web service, and use that functionality in their own applications.
-They also : 
-- Simplify development ==> functionality of other software is accessible without having to understand the details of how that software works, saving time and effort when building new applications.
-- Enable integration ==> allow different software applications to work together,  helping businesses integrate their systems and data and improving efficiency and productivity.
+APIs not only provide a way for developers to access the functionality of another piece of software and use it in their own applications, such as a web service.
 
-#### Objectives
+They also : 
+- Simplify development ==> functionality of other software is accessible without having to understand the details of how that software works, saving time and effort when building new apps.
+- Enable integration ==> allow different software apps to work together,  helping businesses integrate their systems and data and improving efficiency and productivity.
+
+### Objectives
 - Describe the two model types of APIs in ASP.NET Core.
 - Create Swagger documentation for an API by using Swashbuckle.
-- Interact with an API by using the Swagger interface.
+- Interact with an API by using Swagger interface.
+
+### Skills Learned
+- Navigated a documented API
+- Determined endpoints for HTTP operations e.g. /swagger
+- Identified API requirements for HTTP operations
+- Deployed the API to Azure App Service
 
 ##### Approach
 To simplify the learning process, the work was segmented into digestable units.
