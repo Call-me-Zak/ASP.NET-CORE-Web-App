@@ -1,4 +1,7 @@
-![image](https://github.com/user-attachments/assets/5efe11f0-a52e-47e4-8d86-fe052006e770)# ASP.NET-CORE-Web-App
+# Deploying an ASP.NET-CORE API to Azure App Service
+
+![image](https://github.com/user-attachments/assets/5efe11f0-a52e-47e4-8d86-fe052006e770)
+
 #### Learning Path
 In this learning journey I tackled the benefits of using APIs (a set of rules and protocols allowing apps to communicate with each other).
 
@@ -7,7 +10,7 @@ They also :
 - Simplify development ==> functionality of other software is accessible without having to understand the details of how that software works, saving time and effort when building new applications.
 - Enable integration ==> allow different software applications to work together,  helping businesses integrate their systems and data and improving efficiency and productivity.
 
-##### Objectives
+#### Objectives
 - Describe the two model types of APIs in ASP.NET Core.
 - Create Swagger documentation for an API by using Swashbuckle.
 - Interact with an API by using the Swagger interface.
@@ -298,26 +301,36 @@ And here we can see the instance where I tried to add the same id again vs when 
 
 ##### 1) Sign-in to Azure
 
-Error
+![image](https://github.com/user-attachments/assets/c812faa8-c98e-41c0-87ba-765819083de9)
 
+When I first tried to deploy I got an error cause I was on the wrong directory
 ![image](https://github.com/user-attachments/assets/680a46af-d40a-4c34-bcde-ac003cfaf627)
 
-wE GOT OUR BOY AZURE IN THE HOUSE
+Let's go ahead and switch to the correct directory
 
-![image](https://github.com/user-attachments/assets/ffcd2463-e2aa-43c6-8f5c-75294ac14ed9)
+![image](https://github.com/user-attachments/assets/0931c9d1-98aa-4d88-b62f-fa3c309d4611)
 
+I can now select my Azure subscription
 
+![image](https://github.com/user-attachments/assets/2b75392b-842b-41f8-aaea-2a136864541f)
 
-1
+1 : ```CTRL``` + ```SHIFT``` + ```P``` to open up VSCode command menu to filter for the web app in this case
+
 ![image](https://github.com/user-attachments/assets/b2e69b66-e7fe-496d-86f2-46738e8fe792)
+
+Alternatively right clicking on ```App Services``` then selecting ```Create New Web App (Advanced)``` does the trick.
+![image](https://github.com/user-attachments/assets/419a3002-431c-4dba-b7e4-56f9aadb3eb6)
+
 
 2
 ![image](https://github.com/user-attachments/assets/af3c543a-4b2f-4e9e-b45f-da9ea76b2674)
 
-3
-![image](https://github.com/user-attachments/assets/75ad642d-ad59-4ba2-94d4-015b925d5d3d)
+3 : Select ```+Create new resource group``` or pick one if you already have.
+![image](https://github.com/user-attachments/assets/a5e903f9-4cb7-4b0f-a11d-2ff234dc6e8f)
 
-4
+4 Select the runtime stack
+![image](https://github.com/user-attachments/assets/f16aa252-2f68-4ed2-b765-c28ff0660ad3)
+
 ![image](https://github.com/user-attachments/assets/42e2cf17-38f6-4757-b76a-b568364cb4c7)
 
 5
