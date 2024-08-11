@@ -117,7 +117,7 @@ Result we get from SwaggerUI :
 
 ##### Note : 
 The default endpoint for the Swagger UI is ```https:localhost:port/swagger```, in our case we used ```port 5001``` for ```HTTPS``` (use ```port 5000``` for ```HTTP``` when running locally.)
-we can also change to any port we want by modifying the ```launchSettings.json``` file or by setting the ```ASPNETCORE_URLS``` environment variable, as these are merely default setting and we can configure the app to run on a different port if needed. Here's how :
+But this isn't a rule of thumb, as we can also change to any port we want by modifying the ```launchSettings.json``` file or by setting the ```ASPNETCORE_URLS``` environment variable, as these are merely default setting and we can configure the app to run on a different port if needed. Here's how :
 In the ```launchSettings.json``` file, change the ```applicationUrl``` port number to the one we want and then SwaggerUI will be accessible on that port instead.
 In our case, we can pick ```port 5050``` so the settings would change to ```https://localhost:5050```
 
@@ -138,3 +138,6 @@ Ref : SwaggerUI accessed locally via ```https://localhost:5050/swagger/v1/swagge
 I will now walk you through the code used to get to that result.
 
 ![image](https://github.com/user-attachments/assets/95026cc3-c2f4-46dd-8870-bb7bca535269)
+
+
+#### Step 01 :
