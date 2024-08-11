@@ -113,6 +113,12 @@ We can add information to display in the API documentation :
 
 Result we get from SwaggerUI :
 
-###### Note : The default endpoint for the Swagger UI is http:<hostname>:<port>/swagger, in our case we used ```port 5001```.
-
 ![image](https://github.com/user-attachments/assets/b2391bbe-e211-4749-a295-acf770a05ac1)
+
+##### Note : 
+The default endpoint for the Swagger UI is ```https:localhost:port/swagger```, in our case we used ```port 5001``` for ```HTTPS``` (use ```port 5000``` for ```HTTP``` when running locally.)
+we can also change to any port we want by modifying the ```launchSettings.json``` file or by setting the ```ASPNETCORE_URLS``` environment variable, as these are merely default setting and we can configure the app to run on a different port if needed. Here's how :
+In the ```launchSettings.json``` file, change the ```applicationUrl``` port number to the one we want and then SwaggerUI will be accessible on that port instead.
+In our case ```https://localhost:6000```
+
+![image](https://github.com/user-attachments/assets/bbab0bfa-1289-406e-ac71-9934a7135c75)
